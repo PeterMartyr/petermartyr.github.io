@@ -25,5 +25,5 @@ We're working on some great new features for the next release, including adding:
 
 ### DISCLAIMER:
 
-* Start Finance is a Student Project and not recommended for commercial or general use
-* Use at own risk
+* Start Finance is a Student Project and not recommended for any use whatsoever
+    * Use at own risk
