@@ -1,0 +1,617 @@
+
+body {
+  display: block;
+  min-width: 483px;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+/*added*/
+  background-color: #17202A;
+}
+
+header {
+  background-color: #17202a;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1 {
+  margin: 22px 0;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 19px;
+  font-weight: 400
+}
+sup {
+  font-size: small;
+}
+
+footer {
+  border-top: 3px solid #202c39;
+  background-color: #17202a;
+  background-size:cover;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  margin-right: 14px;
+  padding-right: 14px;
+}
+
+tr {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  vertical-align: top;
+  text-align: left;
+}
+
+/*=============== HEADER SECTION ==============================*/
+
+#headerDiv {
+  text-align: center;
+}
+
+#head1ID {
+  font-size:34px;
+  margin: 0 0 22px;
+  padding-top: 22px;
+}
+
+#header2ID {
+  line-height: 1;
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+#dateID {
+  font-size: 26px;
+  margin: 13px 0;
+  line-height: 1;
+  font-weight: 500;
+}
+
+#banner {
+  overflow: hidden;
+  padding: 10px 20px 5px 0px;
+  white-space: nowrap;
+  background: #0c6a93;
+  border-bottom: 3px solid #f47321;
+  white-space: nowrap;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+.navPadding {
+  padding-left: 20px;
+}
+
+#nav {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #fff;
+  font-weight: 500;
+  width: 100%;
+}
+
+/*=============== FOOTER SECTION ==============================*/
+
+.anchorUnderLine:hover {
+  text-decoration: underline;
+}
+
+#footerThinBorder {
+  margin-top: 2px;
+  border-top: 2px solid #17202a;
+  width: 100%;
+}
+
+#returnPad {
+  padding-top: 60px;
+}
+
+#returnToTop {
+  cursor: pointer;
+  font-size: x-large;
+}
+
+#returnToTop:hover {
+  text-decoration: underline;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+#footerNav {
+  padding:0px 50px 50px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#aemilianDiv {
+  width: auto;
+  height: 100px;
+  font-family: 'Alex Brush', cursive;
+  font-size: 32px;
+}
+
+#aemilianx {
+  float: right;
+  position: relative;
+  bottom: -33px; right: 55px;
+}
+
+/*=============== BIO SECTION ==============================*/
+
+#BaseRoomContents {
+  border-radius: 4px;
+  margin: 12px 12px 17px;
+  padding: 4px;
+  border: 1px solid #17202A;
+  border-radius: 4px 4px 0px 0px;
+  background-color: #17202A;
+  width: auto;
+}
+
+#dmContainer {
+  width: 255px;
+  float: right;
+  border: 1px;
+  border-color: inherit;
+  border-style: solid;
+  padding: 8px 0px 5px 8px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #3c87ba;
+  color: white;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-right: 6px;
+  transition: 1.3s;
+  user-select: none;
+}
+
+#dmSwitchContainer {
+  border-radius: 25px;
+  display: inline-block;
+  height: 20px;
+  margin-left: 10px;
+  position: relative;
+  vertical-align: bottom;
+  width: 44px;
+  float: right;
+  right: 6px;
+  top: -2px;
+  background-color: #474747;
+}
+
+#dmSwitchBall {
+  border-radius: 50%;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 2px;
+  left: 25px;
+  transition: left 100ms ease 0s;
+  background-color: whitesmoke;
+}
+
+#offlineContentContainer {
+  background-color: #17202A;
+  border-radius: 4px 4px 0px 0px;
+  width: auto;
+}
+
+#offlineRoomNotice {
+  color: #68B5F0;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 11px 4px 18px 0px;
+}
+
+#sendTipButton {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  padding: 4px 10px;
+  margin: 6px 4px 13px 0px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #009900;
+  color: #FFFFFF;
+  border: 1px solid #288A09;
+  border-radius: 4px;
+}
+
+#sendDMButton {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  padding: 4px 10px;
+  margin: 6px 4px 13px 0px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #f47321;
+  color: #ffffff;
+  border: 1px solid #cd5d26;
+  border-radius: 4px;
+}
+
+#bioContainer {
+  width: auto;
+  height: auto;
+}
+
+#tabBar {
+position: relative;
+overflow: visible;
+height: 14px;
+padding: 8px 4px;
+background-color: #17202A;
+border-radius: 4px 4px 0px 0px;
+}
+
+#followContainer {
+  display: inline-block;
+  float: right;
+  position: relative;
+  width: auto;
+  right: 1px;
+}
+
+#followButton {
+  height: 15px;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  display: inline;
+  font-size: 12px;
+  padding: 3px 8px 2px;
+  top: -4px;
+  float: right;
+  cursor: pointer;
+  margin-right: 0px;
+  background-color: #f47321;
+  color: #ffffff;
+  border: 1px solid #cd5d26;
+  border-radius: 3px;
+}
+
+#fanclubButton {
+  height: 15px;
+  position: relative;
+  overflow: hidden;
+  display: inline;
+  font-size: 12px;
+  padding: 3px 8px 2px;
+  top: -4px;
+  right: 1px;
+  float: right;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: #009900;
+  color: #ffffff;
+  border: 1px solid #288a09;
+}
+
+#fanclubButton:hover {
+  text-decoration: underline;
+}
+
+#satisfactionScore {
+  height: 15px;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  font-size: 12px;
+  padding: 4px 7px 3px;
+  top: -4px; right: 1px;
+  float: right;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: #202c39;
+  color: #68b5f0;
+  text-shadow: none;
+}
+
+#voteDiv {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#highPercent{
+  margin: 0px 3px;
+  vertical-align: top;
+  display: inline;
+  color: #298A08;
+
+}
+
+.voteContainer {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.voteNumber {
+  margin: 0px 3px;
+  vertical-align: top;
+  display: inline;
+}
+
+#voteImageUp {
+  height: 15px;
+  width: 15px;
+  vertical-align: top;
+  margin: 0px 3px;
+  opacity: 0.8;
+
+}
+
+#voteImageDown{
+  height: 15px;
+  width: 15px;
+  vertical-align: top;
+   margin: 0px 3px;
+   opacity: 0.65;
+}
+
+#tabLinkContainer{
+  position: relative;
+  overflow: hidden;
+  height: 24px; top: -2px;
+  width: fit-content;
+}
+
+#tabLink {
+  height: 17px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px 4px 0px 0px;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 8px;
+  float: left;
+  display: block;
+  margin-top: 0px;
+  color: #dc5500;
+  background-color: #202C39;
+}
+
+#BioContents {
+  position: relative;
+  overflow: hidden;
+  min-height: 325px;
+  margin: 0px;
+  padding-left: 8px;
+  background-color: #202C39;
+  border: 1px;
+  border-color: #202C39;
+  border-style: solid;
+  border-top: none;
+  width: calc(100% - 10px);
+}
+
+#tableDiv {
+  padding-left: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+#tablePadding {
+  height: 1px;
+}
+
+#tableCol {
+  width: 150px;
+  min-width: 150px;
+}
+
+#tableHeaderRow {
+  vertical-align: top;
+}
+
+#bioHeader {
+  font-size: 14.4px;
+  font-weight: 500;
+  padding: 11px 0px 21px;
+  line-height: 20px;
+  overflow: visible;
+  white-space: nowrap;
+  text-align: left;
+  color: #ffffff;
+  display: block;
+  width: fit-content;
+  margin: 0;
+}
+
+#promoteButton {
+  margin-left: 5px;
+  padding: 4px;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "UbuntuBold", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #68B5F0;
+  border-color: #68B5F0;
+  display: inline-block;
+}
+
+.label {
+  padding-bottom: 9px;
+  height: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.contentText {
+  font-size: 14px;
+  line-height: 16px;
+  color: #b3b3b3;
+  max-width: fit-content;
+}
+
+.mediaAnchor {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 17px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #68b5f0;
+  text-decoration: none;
+}
+
+.mediaAnchor:hover {
+  text-decoration: underline;								 
+}
+
+.mediaImage {
+  display: block;
+  border-radius: 3%;
+  width: 150px;
+  height: 100px;
+}
+
+.videoIcon {
+  height: 18px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.lockedDiv {
+  width: 151px;
+  height: 101px;
+  border-radius: 3%;
+  position: absolute;
+  left: 0px; top: 0px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.lockImage {
+  width: 18px;
+  height: 18px;
+  margin-left: -9px;
+  margin-top: -9px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  padding: 4px;
+  border: none;
+}
+
+.mediaTokens {
+  position: absolute;
+  bottom: 16px;
+  right: 0px;
+  margin: 8px;
+  font-size: 9px;
+  border-radius: 2px;
+  padding: 1px 3px;
+  line-height: 12px;
+  color: #fff;
+}
+
+.mediaTokensGreen {
+    background-color: rgb(0, 153, 0);
+}
+
+.mediaTokensBlue{
+  background-color: rgb(109, 133, 181);
+}
+
+.mediaDescription {
+  left: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  max-width: 145px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.mediaPadding {
+  margin-bottom: 20px;
+}
+
+.tempIDLE {
+  margin: 0 0 0 -137px;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width:1200px) {
+
+  #BaseRoomContents {
+    margin: 12px 1% 17px;
+  }
+ }
+
+@media screen and (max-width: 1080px) {
+  table {
+    padding-right: 1%;
+  }
+
+  #BioContents {
+    padding-left: 1%;
+    width: auto;
+  }
+
+  #tableDiv {
+    padding-left: 1%;
+  }
+}
+
+ @media screen and (max-width:620px) {
+
+  #BaseRoomContents {
+    margin: 12px 0px 17px;
+  }
+
+ }
+
+ @media screen and (max-width:600px) {
+
+  #tableCol {
+    width: 25%;
+    min-width: 119px;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+
+  .tempIDLE {
+    margin-left: -121px;
+  }
+}
