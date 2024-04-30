@@ -1,19 +1,73 @@
+body {
+  --textColor: #ffffff;
+  --backColorDefault: #17202a;
+  --backImageTop: none;
+  --backImageBottom: none;
+  --borderFooterThickColor: #202c39;
+  --borderFooterThinColor: #17202a;
+  --borderColorDefault: #17202a;
+  --dmContainerBackgroundColor: #0c6a93;
+  --dmContainerBorderColor: #0c6a93;
+  --dmContainerHoverColor: #885336;
+  --dmSwitchContainerColor: #f4771f;
+  --dmBallPosition: 25px;
+  --dmBallTranistion: right 100ms ease 0s;
+  --offLineContainerColor: #17202a;
+  --OffLineTextColor: #68b5f0;
+  --tabBarBackColor: #17202a;
+  --BackColorSecond: #202c39;
+  --bioHeaderColor: #ffffff;
+  --labelColor: #ffffff;
+  --contentTextColor: #b3b3b3;
+  --mediaTextColor: #68b5f0;
+  --mediaTextColor: #0a5a83;
+  --voteScoreBackColor: #202c39;
+  --voteScoreTextColor: #68b5f0;
+  --voteScoreTextShadow: none;
+}
+
+body.light-theme {
+  --textColor: #494949;
+  --backColorDefault: #ffffff;
+  --backImageTop: linear-gradient(#e3aa218c, #1396cf8a);
+  --backImageBottom: linear-gradient(#1396cf8a, #e3aa218c);
+  --borderFooterThickColor: #f47321;
+  --borderFooterThinColor: gray;
+  --borderColorDefault: #acacac;
+  --dmContainerBackgroundColor: #3c87ba;
+  --dmContainerBorderColor: #3c87ba;
+  --dmContainerHoverColor: #042e41;
+  --dmSwitchContainerColor: #474747;
+  --dmBallPosition: 3px;
+  --dmBallTranistion: left 100ms ease 0s;
+  --offLineContainerColor: #e0e0e0;
+  --OffLineTextColor: #0b5d81;
+  --tabBarBackColor: #7f7f7f;
+  --BackColorSecond: #ffffff;
+  --bioHeaderColor: #494949;
+  --labelColor: #0a5a83;
+  --contentTextColor: #000000;
+  --mediaTextColor: #0a5a83;
+  --voteScoreBackColor: #bbbbbb;
+  --voteScoreTextColor: #0a5a83;
+  --voteScoreTextShadow: #94d2e6 1px 1px 0px;
+}
 
 body {
   display: block;
   min-width: 483px;
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--textColor);
   padding: 0;
   margin: 0;
   min-height: 100%;
-/*added*/
-  background-color: #17202A;
+  background-color: var(--backColorDefault);
 }
 
 header {
-  background-color: #17202a;
+  background-color: var(--backColorDefault);
+  background-image: var(--backImageTop);
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -31,8 +85,11 @@ sup {
 }
 
 footer {
-  border-top: 3px solid #202c39;
-  background-color: #17202a;
+  border-top: 3px;
+  border-top-style: solid;
+  border-top-color: var(--borderFooterThickColor);
+  background-color: var(--backColorDefault);
+  background-image: var(--backImageBottom);
   background-size:cover;
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
@@ -119,7 +176,9 @@ tr {
 
 #footerThinBorder {
   margin-top: 2px;
-  border-top: 2px solid #17202a;
+  border-top: 2px;
+  border-top-style: solid;
+  border-top-color: var(--borderFooterThinColor);
   width: 100%;
 }
 
@@ -166,9 +225,11 @@ tr {
   border-radius: 4px;
   margin: 12px 12px 17px;
   padding: 4px;
-  border: 1px solid #17202A;
+  border: 1px;
+  border-style: solid;
+  border-color: var(--borderColorDefault);
   border-radius: 4px 4px 0px 0px;
-  background-color: #17202A;
+  background-color: var(--offLineContainerColor);
   width: auto;
 }
 
@@ -176,19 +237,24 @@ tr {
   width: 255px;
   float: right;
   border: 1px;
-  border-color: inherit;
   border-style: solid;
+  border-color: var(--dmContainerBackgroundColor);
   padding: 8px 0px 5px 8px;
   font-size: 15px;
   font-weight: 400;
   cursor: pointer;
-  background-color: #3c87ba;
+  background-color: var(--dmContainerBackgroundColor);
   color: white;
   border-radius: 4px;
   margin-top: 6px;
   margin-right: 6px;
   transition: 1.3s;
   user-select: none;
+}
+
+#dmContainer:hover {
+  border-color: var(--dmContainerHoverColor);
+  background-color: var(--dmContainerHoverColor);
 }
 
 #dmSwitchContainer {
@@ -202,7 +268,7 @@ tr {
   float: right;
   right: 6px;
   top: -2px;
-  background-color: #474747;
+  background-color: var(--dmSwitchContainerColor);
 }
 
 #dmSwitchBall {
@@ -212,19 +278,19 @@ tr {
   width: 16px;
   position: relative;
   top: 2px;
-  left: 25px;
-  transition: left 100ms ease 0s;
+  left: var(--dmBallPosition);
+  transition: var(--dmBallTranistion);
   background-color: whitesmoke;
 }
 
 #offlineContentContainer {
-  background-color: #17202A;
+  background-color: var(--offLineContainerColor);
   border-radius: 4px 4px 0px 0px;
   width: auto;
 }
 
 #offlineRoomNotice {
-  color: #68B5F0;
+  color: var(--OffLineTextColor);
   font-size: 12px;
   font-weight: 700;
   margin: 11px 4px 18px 0px;
@@ -270,7 +336,7 @@ position: relative;
 overflow: visible;
 height: 14px;
 padding: 8px 4px;
-background-color: #17202A;
+background-color: var(--tabBarBackColor);
 border-radius: 4px 4px 0px 0px;
 }
 
@@ -334,9 +400,9 @@ border-radius: 4px 4px 0px 0px;
   border-radius: 4px;
   cursor: pointer;
   margin-right: 5px;
-  background-color: #202c39;
-  color: #68b5f0;
-  text-shadow: none;
+  background-color: var(--voteScoreBackColor);
+  color: var(--voteScoreTextColor);
+  text-shadow: var(--voteScoreTextShadow);
 }
 
 #voteDiv {
@@ -400,7 +466,7 @@ border-radius: 4px 4px 0px 0px;
   display: block;
   margin-top: 0px;
   color: #dc5500;
-  background-color: #202C39;
+  background-color: var(--BackColorSecond);
 }
 
 #BioContents {
@@ -409,9 +475,9 @@ border-radius: 4px 4px 0px 0px;
   min-height: 325px;
   margin: 0px;
   padding-left: 8px;
-  background-color: #202C39;
+  background-color: var(--BackColorSecond);
   border: 1px;
-  border-color: #202C39;
+  border-color: var(--borderColorDefault);
   border-style: solid;
   border-top: none;
   width: calc(100% - 10px);
@@ -444,7 +510,7 @@ border-radius: 4px 4px 0px 0px;
   overflow: visible;
   white-space: nowrap;
   text-align: left;
-  color: #ffffff;
+  color: var(--bioHeaderColor);
   display: block;
   width: fit-content;
   margin: 0;
@@ -469,14 +535,14 @@ border-radius: 4px 4px 0px 0px;
 .label {
   padding-bottom: 9px;
   height: 16px;
-  color: #ffffff;
+  color: var(--labelColor);
   font-weight: 500;
 }
 
 .contentText {
   font-size: 14px;
   line-height: 16px;
-  color: #b3b3b3;
+  color: var(--contentTextColor);
   max-width: fit-content;
 }
 
@@ -486,7 +552,7 @@ border-radius: 4px 4px 0px 0px;
   margin-bottom: 17px;
   margin-right: 5px;
   cursor: pointer;
-  color: #68b5f0;
+  color: var(--mediaTextColor);
   text-decoration: none;
 }
 
@@ -597,7 +663,6 @@ border-radius: 4px 4px 0px 0px;
   #BaseRoomContents {
     margin: 12px 0px 17px;
   }
-
  }
 
  @media screen and (max-width:600px) {
@@ -607,7 +672,6 @@ border-radius: 4px 4px 0px 0px;
     min-width: 119px;
   }
 }
-
 
 @media screen and (max-width:600px) {
 
