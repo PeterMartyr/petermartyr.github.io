@@ -2,14 +2,6 @@
 
 window.sUserName;
 
-function getVersion() {
-  return 12;
-}
-
-function $(id) {
-  return document.getElementById(id);
-}
-
 function returnToTop() {
   scrollTo({
     top: 0,
